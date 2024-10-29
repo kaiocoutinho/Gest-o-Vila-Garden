@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="../js/index.js" type="module" defer></script>
+    <title>Gestão</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><span>Funcionários</span></a>
+            <a href="./relatorios.html">Relátorios</a>
+            <a href="./config.html"><span>Configurações</span></a>
+        </nav>
+    </header>
+    <main>
+        <section class="container-register">
+            <div class="title">
+                <h1>Configurações</h1>
+            </div>
+            <div class="body">
+                <div>
+                    <label for="valueHours">Defina o valor a ser pago por horas trabalhada:</label>
+                    <input type="number" id="valueHours">
+                </div>
+                <div class="button-save">
+                    <button type="button" id="btnSaveConfig">Salvar</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="title">
+                    <h1>Registro</h1>
+                </div>
+
+                <div class="body">
+                    <div>
+                        <label for="name">Nome do funcionário</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="date-exit">
+                        <div>
+                            <label for="timeArrival">Horário de chegada</label>
+                            <input type="text" id="timeArrival">
+                        </div>
+                        <div>
+                            <label for="timeExit">Saída</label>
+                            <input type="text" id="timeExit">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="date">Data</label>
+                        <input type="date" id="date">
+                    </div>
+                    <div class="button-save">
+                        <button type="button" id="btnSave">Salvar</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="title">
+                <h1>Relatórios</h1>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Funcionário</th>
+                        <th>Horas Trab.</th>
+                        <th>Data</th>
+                        <th>Total a pagar</th>
+                    </tr>
+                </thead>
+                <tbody id="info-table">
+                    <tr>
+                        <td>Lucas</td>
+                        <td>12 Horas</td>
+                        <td>30/09/2024</td>
+                        <td>120</td>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+
+</html>
